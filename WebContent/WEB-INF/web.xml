@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>CourseDesign</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>uploadServlet</servlet-name>
+    <servlet-class>servlet.uploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>uploadServlet</servlet-name>
+    <url-pattern>/servlet/uploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ListFileTestServlet</servlet-name>
+    <servlet-class>servlet.ListFileTestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListFileTestServlet</servlet-name>
+    <url-pattern>/servlet/ListFileTestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DownLoadTestServlet</servlet-name>
+    <servlet-class>servlet.DownLoadTestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DownLoadTestServlet</servlet-name>
+    <url-pattern>/servlet/DownLoadTestServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
